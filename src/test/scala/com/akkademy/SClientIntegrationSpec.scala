@@ -7,6 +7,7 @@ import scala.concurrent.Await
 
 class SClientIntegrationSpec extends FunSpecLike with Matchers {
   val client = new SClient("127.0.0.1:2552")
+
   describe("akkademyDbClient") {
     it("should set a value") {
       client.set("123", new Integer(123))
